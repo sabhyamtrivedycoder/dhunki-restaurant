@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="6" fill="#0c0d10" />
+  <circle cx="16" cy="16" r="13" fill="none" stroke="#c59b27" stroke-width="1.2" />
+  <!-- Arch & Flame Motif -->
+  <path d="M 9 23 L 9 15 C 9 10, 23 10, 23 15 L 23 23 Z" fill="none" stroke="#c59b27" stroke-width="1.2" />
+  <path d="M 11 21 C 11 16, 21 16, 21 21 Z" fill="#c59b27" />
+  <polygon points="16,5 17,7 19,7 17,9 18,11 16,10 14,11 15,9 13,7 15,7" fill="#f5d382" />
+</svg>

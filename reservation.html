@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <title>Reserve a Table - Dhunki Restaurant | Rajdhanwar, Giridih</title>
+  <meta name="description" content="Book a family dining table or group booth at Dhunki Restaurant in Rajdhanwar, Barjo. Instant confirmation via WhatsApp or phone call." />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="announcement-inner">
+      <div class="announcement-left">
+        <div class="announcement-item">
+          <span class="label">Location:</span> Main Road Rajdhanwar, Barjo, Near Indian Oil Petrol Pump, Giridih
+        </div>
+        <div class="announcement-item">
+          <span class="label">Hours:</span> 10:30 AM to 11:00 PM Daily
+        </div>
+      </div>
+      <div class="announcement-right">
+        <div class="announcement-item">
+          <span class="label">Direct Reservations:</span>
+          <a href="tel:6207858727">6207858727</a> | <a href="tel:9123401594">9123401594</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-logo-link" title="Dhunki Restaurant">
+        <img src="images/logo/dhunki_logo.svg" alt="Dhunki Restaurant Logo" class="brand-logo-img" />
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="menu.html" class="nav-link">Menu &amp; Tariff</a></li>
+          <li><a href="gallery.html" class="nav-link">Ambiance</a></li>
+          <li><a href="banquet.html" class="nav-link">Banquet &amp; Events</a></li>
+          <li><a href="reservation.html" class="nav-link active">Reserve Table</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:6207858727" class="btn btn-outline btn-sm">Call Now</a>
+        <a href="reservation.html" class="btn btn-primary btn-sm">Book Table</a>
+      </div>
+
+      <button id="mobileNavToggle" class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+        <span>Menu</span>
+      </button>
+    </div>
+
+    <div id="mobileMenuDrawer" class="mobile-menu-drawer">
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="menu.html" class="nav-link">Menu &amp; Tariff</a></li>
+        <li><a href="gallery.html" class="nav-link">Ambiance</a></li>
+        <li><a href="banquet.html" class="nav-link">Banquet &amp; Events</a></li>
+        <li><a href="reservation.html" class="nav-link active">Reserve Table</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="privacy.html" class="nav-link">Privacy Policy</a></li>
+        <li><a href="terms.html" class="nav-link">Terms and Conditions</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-banner">
+      <div class="container">
+        <span class="page-banner-badge">Warm Hospitality</span>
+        <h1 class="page-banner-title">Reserve Your Table</h1>
+        <p class="page-banner-subtitle">
+          Ensure your family booth is prepared before arrival. Free reservations with zero advance deposit required.
+        </p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="form-card">
+          <h2 style="font-size: 24px; color: #ffffff; margin-bottom: 8px;">Table Booking Request</h2>
+          <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 24px;">
+            Submit your reservation details below. We instantly prepare your table and send WhatsApp verification.
+          </p>
+
+          <form id="reservationForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="resName">Full Name</label>
+                <input type="text" id="resName" class="form-control" placeholder="e.g. Ramesh Kumar" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="resPhone">Mobile Phone</label>
+                <input type="tel" id="resPhone" class="form-control" placeholder="e.g. 9876543210" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="resDate">Dining Date</label>
+                <input type="date" id="resDate" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="resTime">Preferred Time</label>
+                <select id="resTime" class="form-control" required>
+                  <option value="11:30 AM">11:30 AM - Lunch</option>
+                  <option value="12:30 PM">12:30 PM - Lunch</option>
+                  <option value="01:30 PM">01:30 PM - Lunch</option>
+                  <option value="02:30 PM">02:30 PM - Lunch</option>
+                  <option value="07:00 PM">07:00 PM - Dinner</option>
+                  <option value="08:00 PM" selected>08:00 PM - Dinner</option>
+                  <option value="09:00 PM">09:00 PM - Dinner</option>
+                  <option value="10:00 PM">10:00 PM - Late Dinner</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="resGuests">Number of Guests</label>
+                <select id="resGuests" class="form-control">
+                  <option value="1-2 Guests">1 - 2 Guests (Couples)</option>
+                  <option value="3-4 Guests">3 - 4 Guests (Small Family)</option>
+                  <option value="5-8 Guests" selected>5 - 8 Guests (Family Table)</option>
+                  <option value="9-15 Guests">9 - 15 Guests (Large Gathering)</option>
+                  <option value="15+ Guests">15+ Guests (Party Feast)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="resOccasion">Occasion</label>
+                <select id="resOccasion" class="form-control">
+                  <option value="Family Dining">Regular Family Dining</option>
+                  <option value="Birthday Dinner">Birthday Dinner</option>
+                  <option value="Anniversary">Anniversary Celebration</option>
+                  <option value="Friends Get-Together">Friends Get-Together</option>
+                  <option value="Business Lunch">Business Lunch</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="resNotes">Special Requests (Optional)</label>
+              <textarea id="resNotes" class="form-control" placeholder="Let us know if you need high chairs for infants, private booth preference, or pre-ordered Handi Mutton..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Confirm Table Reservation</button>
+          </form>
+
+          <div style="margin-top: 24px; border-top: 1px solid var(--border-light); padding-top: 18px; text-align: center;">
+            <p style="font-size: 13px; color: var(--text-muted);">
+              Need instant booking confirmation right now? Call our floor manager: <a href="tel:6207858727" style="color: var(--accent-gold-light); font-weight: 600;">6207858727</a> or <a href="tel:9123401594" style="color: var(--accent-gold-light); font-weight: 600;">9123401594</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo/dhunki_logo.svg" alt="Dhunki Restaurant" style="height: 48px; width: auto;" />
+          <p>
+            Dhunki Restaurant is a complete family restaurant and banquet hall in Rajdhanwar, Barjo (Giridih), Jharkhand. Authentic flavors, pure hospitality, and memorable celebrations.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu &amp; Tariff</a></li>
+            <li><a href="gallery.html">Ambiance Gallery</a></li>
+            <li><a href="banquet.html">Banquet &amp; Events</a></li>
+            <li><a href="reservation.html">Table Booking</a></li>
+            <li><a href="contact.html">Find Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Details</h4>
+          <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 12px;">
+            Main Road Rajdhanwar, Barjo, Near Indian Oil Petrol Pump (Giridih) 825412
+          </p>
+          <p style="font-size: 13px; color: var(--accent-gold-light);">
+            Phone: <a href="tel:6207858727">6207858727</a> / <a href="tel:9123401594">9123401594</a>
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal Information</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms and Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Dhunki Restaurant. All rights reserved.</div>
+        <div>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms and Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
