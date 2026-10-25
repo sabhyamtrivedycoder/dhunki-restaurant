@@ -1,6 +1,9 @@
-// Dhunki Restaurant - Authentic Menu Data directly extracted from restaurant tariff cards
+// Dhunki Restaurant - Comprehensive Authentic Menu Data extracted directly from official restaurant tariff cards
 export const menuCategories = [
   { id: 'all', name: 'Full Menu' },
+  { id: 'soup', name: 'Soups' },
+  { id: 'chinese', name: 'Chinese & Chowmein' },
+  { id: 'snacks', name: 'Snacks & Pakoras' },
   { id: 'tandoor', name: 'Tandoor & Kabab' },
   { id: 'biryani', name: 'Biryani & Rice' },
   { id: 'mutton', name: 'Mutton Handi & Curry' },
@@ -8,13 +11,259 @@ export const menuCategories = [
   { id: 'veg', name: 'Paneer & Veg Main' },
   { id: 'dal', name: 'Dal & Tadka' },
   { id: 'breads', name: 'Tandoor & Breads' },
-  { id: 'rolls', name: 'Rolls & Fast Food' },
-  { id: 'pizza-pasta', name: 'Pizza, Pasta & Sandwiches' },
+  { id: 'rolls', name: 'Rolls & Quick Bites' },
+  { id: 'pizza-pasta', name: 'Pizza & Pasta' },
   { id: 'momos', name: 'Momos' },
+  { id: 'salad', name: 'Salad & Papad' },
   { id: 'beverages', name: 'Beverages & Mojitos' }
 ];
 
 export const menuItems = [
+  // Soups
+  {
+    category: 'soup',
+    name: 'Manchow Soup',
+    description: 'Spicy and tangy dark soup loaded with minced veggies, garlic, and topped with crisp fried noodles.',
+    price: 'Veg: Rs. 130 / Non-Veg: Rs. 180',
+    type: 'veg',
+    highlight: true
+  },
+  {
+    category: 'soup',
+    name: 'Hot and Sour Soup',
+    description: 'Classic Sichuan broth infused with vinegar, crushed pepper, bamboo shoots, and mushrooms.',
+    price: 'Veg: Rs. 120 / Non-Veg: Rs. 180',
+    type: 'veg'
+  },
+  {
+    category: 'soup',
+    name: 'Lemon Coriander Soup',
+    description: 'Light and fragrant herbal broth flavored with fresh lemon juice, crushed coriander roots, and spices.',
+    price: 'Veg: Rs. 140 / Non-Veg: Rs. 160',
+    type: 'veg'
+  },
+  {
+    category: 'soup',
+    name: 'Chilli Garlic Soup',
+    description: 'Robust and warming soup with roasted garlic, red chilies, and light soy reduction.',
+    price: 'Veg: Rs. 130 / Non-Veg: Rs. 160',
+    type: 'veg'
+  },
+  {
+    category: 'soup',
+    name: 'Clear Soup',
+    description: 'Delicate light consommé with gently simmered garden vegetables or tender chicken bits.',
+    price: 'Veg: Rs. 80 / Non-Veg: Rs. 130',
+    type: 'veg'
+  },
+  {
+    category: 'soup',
+    name: 'Tomato Soup',
+    description: 'Smooth creamed ripe tomato soup seasoned with roasted cumin and buttered croutons.',
+    price: 'Rs. 130',
+    type: 'veg'
+  },
+  {
+    category: 'soup',
+    name: 'Mushroom Soup',
+    description: 'Creamy button mushroom purée soup infused with black pepper and herbs.',
+    price: 'Rs. 110',
+    type: 'veg'
+  },
+  {
+    category: 'soup',
+    name: 'Garlic Soup / Ginger Soup',
+    description: 'Homestyle restorative garlic or ginger herbal warm broth.',
+    price: 'Veg: Rs. 70-80 / Non-Veg: Rs. 120-130',
+    type: 'veg'
+  },
+
+  // Chinese & Chowmein
+  {
+    category: 'chinese',
+    name: 'Chicken Lollipop (Oil Fry / Dry / Gravy)',
+    description: 'Crispy fried drumette cuts tossed in hot garlic schezwan sauce or served crisp dry.',
+    price: 'Oil Fry: Rs. 250 / Dry: Rs. 270 / Gravy: Rs. 280',
+    type: 'non-veg',
+    highlight: true
+  },
+  {
+    category: 'chinese',
+    name: 'Chilli Chicken (Bone / Boneless)',
+    description: 'Crispy fried chicken chunks wok-tossed with green chilies, onion wedges, and soy reduction.',
+    price: 'With Bone: Rs. 220 / Boneless: Rs. 270',
+    type: 'non-veg',
+    highlight: true
+  },
+  {
+    category: 'chinese',
+    name: 'Chicken 65',
+    description: 'Fiery south-Indian style spiced fried chicken tempered with curry leaves and mustard seeds.',
+    price: 'Rs. 270',
+    type: 'non-veg'
+  },
+  {
+    category: 'chinese',
+    name: 'Chicken Crispy / Chicken 88',
+    description: 'Shredded crispy chicken tossed with fiery bell pepper glaze and sesame seeds.',
+    price: 'Rs. 270',
+    type: 'non-veg'
+  },
+  {
+    category: 'chinese',
+    name: 'Chilli Paneer',
+    description: 'Cottage cheese cubes tossed in high-flame wok with crisp capsicum, onions, and spicy dark sauce.',
+    price: 'Rs. 230',
+    type: 'veg',
+    highlight: true
+  },
+  {
+    category: 'chinese',
+    name: 'Paneer Crispy',
+    description: 'Thin-battered cottage cheese batons fried until golden crunch and tossed in sweet-chili garlic.',
+    price: 'Rs. 250',
+    type: 'veg'
+  },
+  {
+    category: 'chinese',
+    name: 'Chilli Mushroom',
+    description: 'Crispy button mushrooms tossed with garlic, scallions, and tangy hot soy glaze.',
+    price: 'Rs. 210',
+    type: 'veg'
+  },
+  {
+    category: 'chinese',
+    name: 'Chilli Potato',
+    description: 'Crispy golden potato fingers tossed in savory honey-chilli-garlic sauce.',
+    price: 'Rs. 150',
+    type: 'veg'
+  },
+  {
+    category: 'chinese',
+    name: 'Baby Corn Chilli / Baby Corn Crispy',
+    description: 'Tender baby corn spears battered crisp and wok-tossed with chili aromatics.',
+    price: 'Rs. 220 - Rs. 240',
+    type: 'veg'
+  },
+  {
+    category: 'chinese',
+    name: 'Manchurian (Veg / Non-Veg)',
+    description: 'Golden vegetable dumplings or tender chicken meatballs in aromatic cilantro ginger sauce.',
+    price: 'Veg: Rs. 150 / Non-Veg: Rs. 260',
+    type: 'veg'
+  },
+  {
+    category: 'chinese',
+    name: 'Veg Chowmein',
+    description: 'Wok-tossed noodles with crunchy julienned carrots, cabbage, capsicum, and light soy.',
+    price: 'Half: Rs. 80 / Full: Rs. 120',
+    type: 'veg'
+  },
+  {
+    category: 'chinese',
+    name: 'Egg Chowmein',
+    description: 'Street-style wok noodles tossed with spiced scrambled egg shreds and spring onions.',
+    price: 'Half: Rs. 90 / Full: Rs. 150',
+    type: 'egg'
+  },
+  {
+    category: 'chinese',
+    name: 'Chicken Egg Chowmein',
+    description: 'Generous medley of shredded chicken, scrambled eggs, and noodles tossed on high heat.',
+    price: 'Half: Rs. 120 / Full: Rs. 170',
+    type: 'non-veg',
+    highlight: true
+  },
+  {
+    category: 'chinese',
+    name: 'Veg Mix / Schezwan Chowmein',
+    description: 'Stir-fried noodles in fiery homemade red chili schezwan reduction.',
+    price: 'Rs. 120 - Rs. 170',
+    type: 'veg'
+  },
+  {
+    category: 'chinese',
+    name: 'Chicken Triple Noodles',
+    description: 'Chef signature combination platter of fried rice, crispy noodles, and spicy chicken gravy.',
+    price: 'Rs. 230',
+    type: 'non-veg'
+  },
+  {
+    category: 'chinese',
+    name: 'American Chopsuey',
+    description: 'Crispy golden fried noodle nest topped with sweet-and-sour vegetable or chicken reduction.',
+    price: 'Veg: Rs. 250 / Non-Veg: Rs. 290',
+    type: 'veg'
+  },
+
+  // Snacks & Pakoras
+  {
+    category: 'snacks',
+    name: 'Chicken Pakora',
+    description: 'Boneless juicy chicken cuts marinated in spices, battered in seasoned gram flour, and fried crisp.',
+    price: 'Rs. 210',
+    type: 'non-veg',
+    highlight: true
+  },
+  {
+    category: 'snacks',
+    name: 'Paneer Pakora',
+    description: 'Thick slabs of fresh cottage cheese coated in spiced batter with mint chutney stuffing.',
+    price: 'Rs. 210',
+    type: 'veg'
+  },
+  {
+    category: 'snacks',
+    name: 'Egg Pakora',
+    description: 'Hard-boiled egg halves wrapped in spiced besan batter and fried golden.',
+    price: 'Rs. 150',
+    type: 'egg'
+  },
+  {
+    category: 'snacks',
+    name: 'Chicken Cutlet',
+    description: 'Crisp breadcrumb-coated patties of spiced minced chicken, potatoes, and cilantro.',
+    price: 'Rs. 180',
+    type: 'non-veg'
+  },
+  {
+    category: 'snacks',
+    name: 'Paneer Fry',
+    description: 'Shallow-fried cottage cheese cubes dusted with chaat masala and lemon.',
+    price: 'Rs. 160',
+    type: 'veg'
+  },
+  {
+    category: 'snacks',
+    name: 'Egg Devil',
+    description: 'Traditional spiced egg croquette fried to deep golden brown perfection.',
+    price: 'Rs. 40',
+    type: 'egg'
+  },
+
+  // Salad & Papad
+  {
+    category: 'salad',
+    name: 'Indian Green Salad',
+    description: 'Fresh sliced cucumbers, garden tomatoes, onions, carrots, and green chilies with lemon.',
+    price: 'Half: Rs. 50 / Full: Rs. 100',
+    type: 'veg'
+  },
+  {
+    category: 'salad',
+    name: 'Masala Papad',
+    description: 'Roasted crisp lentil papad topped with diced onions, tomatoes, coriander, and tangy chaat seasoning.',
+    price: 'Rs. 40',
+    type: 'veg'
+  },
+  {
+    category: 'salad',
+    name: 'Roasted Papad / Onion Salad',
+    description: 'Charcoal fire-roasted crunchy papad or spiced sliced onion rings.',
+    price: 'Rs. 20 - Rs. 40',
+    type: 'veg'
+  },
+
   // Tandoor & Kabab
   {
     category: 'tandoor',
@@ -111,6 +360,13 @@ export const menuItems = [
     name: 'Jeera Rice',
     description: 'Basmati rice tempered with golden roasted cumin seeds and desi ghee.',
     price: 'Half: Rs. 80 / Full: Rs. 120',
+    type: 'veg'
+  },
+  {
+    category: 'biryani',
+    name: 'Steam Rice',
+    description: 'Fluffy steamed aged long-grain basmati rice.',
+    price: 'Half: Rs. 60 / Full: Rs. 90',
     type: 'veg'
   },
   {
